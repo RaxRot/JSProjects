@@ -3,9 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
     <link rel="stylesheet" href="style.css" />
     <script src="script.js"></script>
+
     <title>Password Generator</title>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="password-box">
+        <input type="text" placeholder="@coding$gla^" disabled />
+        <i class="uil uil-copy copy-icon"></i>
+      </div>
+      <div class="range-box">
+        <input type="range" min="6" max="16" value="8 /" />
+        <span class="slider-number">8</span>
+      </div>
+      <button class="generate-button">Generate Paddword</button>
+    </div>
+  </body>
 </html>
