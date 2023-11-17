@@ -97,6 +97,7 @@ form {
   border-radius: 10px;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  display: none;
 }
 
 #show-more:hover {
