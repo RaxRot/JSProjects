@@ -23,38 +23,17 @@ h2 {
   display: flex;
 }
 
-.clock div {
-  margin: 5px;
-  position: relative;
-}
-.clock span {
-  width: 100px;
-  height: 80px;
-  background-color: slateblue;
-  opacity: 0.8;
+.clock .time {
+  font-size: 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
   color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: black;
+  border-radius: 10px;
 }
 
-.clock .text {
-  font-size: 15px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  background: darkblue;
-  height: 30px;
-  opacity: 0.8;
-}
-
-.clock .ampm {
-  position: absolute;
-  bottom: 40px;
-  left: 20px;
-  width: 60px;
-  height: 30px;
-  font-size: 20px;
-  background: green;
+.clock .time:hover {
+  color: black;
+  background-color: white;
+  transition: 1s ease-in-out;
 }
