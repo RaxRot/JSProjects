@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <script defer src="script.js"></script>
     <title>Slider</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="images/city1.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/city2.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/city3.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/city4.jpeg" /></div>
+          <div class="swiper-slide"><img src="images/city5.jpeg" /></div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        //AVTO PLAY CAN DELETE
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+
+        // Optional parameters
+        //horizontal-vertical!!!
+        direction: "horizontal",
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
 </html>
