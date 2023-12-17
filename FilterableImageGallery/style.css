@@ -24,6 +24,7 @@ body {
   display: flex;
   align-items: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 button {
@@ -49,6 +50,7 @@ button.active {
 
 .card {
   flex-basis: 300px;
+  flex-grow: 1;
   background-color: white;
   padding: 3px;
   border-radius: 8px;
